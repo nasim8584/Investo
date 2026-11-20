@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BANKTANK - Bangladesh Financial Registry & Comparison</title>
+    <meta name="description" content="Bangladesh's premier investment, savings, and insurance comparison platform. Compare bank rates, Sanchaypatra, and insurance packages with ease." />
+    <meta property="og:title" content="BANKTANK - Bangladesh Financial Registry & Comparison" />
+    <meta property="og:description" content="Bangladesh's premier investment, savings, and insurance comparison platform. Compare bank rates, Sanchaypatra, and insurance packages with ease." />
+    <script>
+      // Gracefully ignore WebSocket / HMR transport errors per environment specification
+      window.addEventListener('error', function (event) {
+        if (
+          event.message &&
+          (event.message.includes('WebSocket') ||
+           event.message.includes('createWebSocketModuleRunnerTransport') ||
+           event.filename?.includes('@vite/client'))
+        ) {
+          event.stopImmediatePropagation();
+          event.preventDefault();
+        }
+      }, true);
+      window.addEventListener('unhandledrejection', function (event) {
+        var reason = event.reason ? (event.reason.message || String(event.reason)) : '';
+        if (
+          reason.includes('WebSocket') ||
+          reason.includes('createWebSocketModuleRunnerTransport') ||
+          String(event.reason?.stack || '').includes('@vite/client')
+        ) {
+          event.stopImmediatePropagation();
+          event.preventDefault();
+        }
+      }, true);
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

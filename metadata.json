@@ -1,0 +1,8 @@
+{
+  "name": "BANKTANK",
+  "description": "Bangladesh's premier investment, savings, and insurance comparison platform. Compare bank rates, Sanchaypatra, and insurance packages with ease.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
